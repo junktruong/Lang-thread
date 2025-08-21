@@ -1,0 +1,1002 @@
+[
+  {
+    "word": "Hello",
+    "meaning": "Xin chào",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-08-29T12:33:00Z"
+    }
+  },
+  {
+    "word": "Book",
+    "meaning": "Quyển sách",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-12-03T17:52:00Z"
+    }
+  },
+  {
+    "word": "Computer",
+    "meaning": "Máy tính",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-10T03:18:00Z"
+    }
+  },
+  {
+    "word": "Table",
+    "meaning": "Cái bàn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-07T23:51:00Z"
+    }
+  },
+  {
+    "word": "Chair",
+    "meaning": "Cái ghế",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-23T16:16:00Z"
+    }
+  },
+  {
+    "word": "School",
+    "meaning": "Trường học",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-13T07:59:00Z"
+    }
+  },
+  {
+    "word": "Teacher",
+    "meaning": "Giáo viên",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-12-27T13:45:00Z"
+    }
+  },
+  {
+    "word": "Student",
+    "meaning": "Học sinh",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-06-04T10:22:00Z"
+    }
+  },
+  {
+    "word": "Phone",
+    "meaning": "Điện thoại",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-02T08:45:00Z"
+    }
+  },
+  {
+    "word": "Car",
+    "meaning": "Xe hơi",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-04-11T14:23:00Z"
+    }
+  },
+  {
+    "word": "Bike",
+    "meaning": "Xe đạp",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-06-11T02:44:00Z"
+    }
+  },
+  {
+    "word": "Tree",
+    "meaning": "Cái cây",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-03T13:14:00Z"
+    }
+  },
+  {
+    "word": "Dog",
+    "meaning": "Con chó",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-12-20T03:42:00Z"
+    }
+  },
+  {
+    "word": "Cat",
+    "meaning": "Con mèo",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-17T12:53:00Z"
+    }
+  },
+  {
+    "word": "Food",
+    "meaning": "Thức ăn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-10-18T21:03:00Z"
+    }
+  },
+  {
+    "word": "Water",
+    "meaning": "Nước",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-07-01T17:19:00Z"
+    }
+  },
+  {
+    "word": "Sun",
+    "meaning": "Mặt trời",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-24T21:48:00Z"
+    }
+  },
+  {
+    "word": "Moon",
+    "meaning": "Mặt trăng",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-02-26T06:09:00Z"
+    }
+  },
+  {
+    "word": "Star",
+    "meaning": "Ngôi sao",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-02T13:00:00Z"
+    }
+  },
+  {
+    "word": "Friend",
+    "meaning": "Bạn bè",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-22T22:08:00Z"
+    }
+  },
+  {
+    "word": "Hello",
+    "meaning": "Xin chào",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-08-29T10:29:00Z"
+    }
+  },
+  {
+    "word": "Book",
+    "meaning": "Quyển sách",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-11T22:13:00Z"
+    }
+  },
+  {
+    "word": "Computer",
+    "meaning": "Máy tính",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-06T23:54:00Z"
+    }
+  },
+  {
+    "word": "Table",
+    "meaning": "Cái bàn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-07-09T14:35:00Z"
+    }
+  },
+  {
+    "word": "Chair",
+    "meaning": "Cái ghế",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-14T09:13:00Z"
+    }
+  },
+  {
+    "word": "School",
+    "meaning": "Trường học",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-06-10T13:15:00Z"
+    }
+  },
+  {
+    "word": "Teacher",
+    "meaning": "Giáo viên",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-10-19T03:24:00Z"
+    }
+  },
+  {
+    "word": "Student",
+    "meaning": "Học sinh",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-01T12:54:00Z"
+    }
+  },
+  {
+    "word": "Phone",
+    "meaning": "Điện thoại",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-03T18:05:00Z"
+    }
+  },
+  {
+    "word": "Car",
+    "meaning": "Xe hơi",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-04-03T00:03:00Z"
+    }
+  },
+  {
+    "word": "Bike",
+    "meaning": "Xe đạp",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-04T23:02:00Z"
+    }
+  },
+  {
+    "word": "Tree",
+    "meaning": "Cái cây",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-26T03:06:00Z"
+    }
+  },
+  {
+    "word": "Dog",
+    "meaning": "Con chó",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-08-20T15:30:00Z"
+    }
+  },
+  {
+    "word": "Cat",
+    "meaning": "Con mèo",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-30T06:44:00Z"
+    }
+  },
+  {
+    "word": "Food",
+    "meaning": "Thức ăn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-07-27T07:07:00Z"
+    }
+  },
+  {
+    "word": "Water",
+    "meaning": "Nước",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-04-03T15:01:00Z"
+    }
+  },
+  {
+    "word": "Sun",
+    "meaning": "Mặt trời",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-27T04:12:00Z"
+    }
+  },
+  {
+    "word": "Moon",
+    "meaning": "Mặt trăng",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-10T04:46:00Z"
+    }
+  },
+  {
+    "word": "Star",
+    "meaning": "Ngôi sao",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-28T10:08:00Z"
+    }
+  },
+  {
+    "word": "Friend",
+    "meaning": "Bạn bè",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-16T03:23:00Z"
+    }
+  },
+  {
+    "word": "Hello",
+    "meaning": "Xin chào",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-02-01T08:19:00Z"
+    }
+  },
+  {
+    "word": "Book",
+    "meaning": "Quyển sách",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-04-25T04:50:00Z"
+    }
+  },
+  {
+    "word": "Computer",
+    "meaning": "Máy tính",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-10-02T18:24:00Z"
+    }
+  },
+  {
+    "word": "Table",
+    "meaning": "Cái bàn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-20T13:58:00Z"
+    }
+  },
+  {
+    "word": "Chair",
+    "meaning": "Cái ghế",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-08-25T07:19:00Z"
+    }
+  },
+  {
+    "word": "School",
+    "meaning": "Trường học",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-30T18:21:00Z"
+    }
+  },
+  {
+    "word": "Teacher",
+    "meaning": "Giáo viên",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-04-08T02:52:00Z"
+    }
+  },
+  {
+    "word": "Student",
+    "meaning": "Học sinh",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-18T19:57:00Z"
+    }
+  },
+  {
+    "word": "Phone",
+    "meaning": "Điện thoại",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-15T06:07:00Z"
+    }
+  },
+  {
+    "word": "Car",
+    "meaning": "Xe hơi",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-12-16T14:44:00Z"
+    }
+  },
+  {
+    "word": "Bike",
+    "meaning": "Xe đạp",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-28T18:40:00Z"
+    }
+  },
+  {
+    "word": "Tree",
+    "meaning": "Cái cây",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-08-29T07:29:00Z"
+    }
+  },
+  {
+    "word": "Dog",
+    "meaning": "Con chó",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-04-03T01:20:00Z"
+    }
+  },
+  {
+    "word": "Cat",
+    "meaning": "Con mèo",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-06T10:31:00Z"
+    }
+  },
+  {
+    "word": "Food",
+    "meaning": "Thức ăn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-29T18:36:00Z"
+    }
+  },
+  {
+    "word": "Water",
+    "meaning": "Nước",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-16T16:27:00Z"
+    }
+  },
+  {
+    "word": "Sun",
+    "meaning": "Mặt trời",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-04T06:36:00Z"
+    }
+  },
+  {
+    "word": "Moon",
+    "meaning": "Mặt trăng",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-08-30T07:50:00Z"
+    }
+  },
+  {
+    "word": "Star",
+    "meaning": "Ngôi sao",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-14T10:11:00Z"
+    }
+  },
+  {
+    "word": "Friend",
+    "meaning": "Bạn bè",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-01-03T18:37:00Z"
+    }
+  },
+  {
+    "word": "Hello",
+    "meaning": "Xin chào",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-04-18T10:40:00Z"
+    }
+  },
+  {
+    "word": "Book",
+    "meaning": "Quyển sách",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-08T00:37:00Z"
+    }
+  },
+  {
+    "word": "Computer",
+    "meaning": "Máy tính",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-07-06T14:41:00Z"
+    }
+  },
+  {
+    "word": "Table",
+    "meaning": "Cái bàn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-25T07:57:00Z"
+    }
+  },
+  {
+    "word": "Chair",
+    "meaning": "Cái ghế",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-02-02T12:23:00Z"
+    }
+  },
+  {
+    "word": "School",
+    "meaning": "Trường học",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-30T22:35:00Z"
+    }
+  },
+  {
+    "word": "Teacher",
+    "meaning": "Giáo viên",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-06-20T13:19:00Z"
+    }
+  },
+  {
+    "word": "Student",
+    "meaning": "Học sinh",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-08-25T04:24:00Z"
+    }
+  },
+  {
+    "word": "Phone",
+    "meaning": "Điện thoại",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-29T10:32:00Z"
+    }
+  },
+  {
+    "word": "Car",
+    "meaning": "Xe hơi",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-02-08T17:55:00Z"
+    }
+  },
+  {
+    "word": "Bike",
+    "meaning": "Xe đạp",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-06-05T13:52:00Z"
+    }
+  },
+  {
+    "word": "Tree",
+    "meaning": "Cái cây",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-07T10:16:00Z"
+    }
+  },
+  {
+    "word": "Dog",
+    "meaning": "Con chó",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-07-30T00:38:00Z"
+    }
+  },
+  {
+    "word": "Cat",
+    "meaning": "Con mèo",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-07T06:51:00Z"
+    }
+  },
+  {
+    "word": "Food",
+    "meaning": "Thức ăn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-01-16T01:15:00Z"
+    }
+  },
+  {
+    "word": "Water",
+    "meaning": "Nước",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-02-18T16:17:00Z"
+    }
+  },
+  {
+    "word": "Sun",
+    "meaning": "Mặt trời",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-10-05T10:54:00Z"
+    }
+  },
+  {
+    "word": "Moon",
+    "meaning": "Mặt trăng",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-07-23T19:40:00Z"
+    }
+  },
+  {
+    "word": "Star",
+    "meaning": "Ngôi sao",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-09-09T12:40:00Z"
+    }
+  },
+  {
+    "word": "Friend",
+    "meaning": "Bạn bè",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-01-17T08:37:00Z"
+    }
+  },
+  {
+    "word": "Hello",
+    "meaning": "Xin chào",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-06-04T13:25:00Z"
+    }
+  },
+  {
+    "word": "Book",
+    "meaning": "Quyển sách",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-13T15:50:00Z"
+    }
+  },
+  {
+    "word": "Computer",
+    "meaning": "Máy tính",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-01-19T09:07:00Z"
+    }
+  },
+  {
+    "word": "Table",
+    "meaning": "Cái bàn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-06T08:43:00Z"
+    }
+  },
+  {
+    "word": "Chair",
+    "meaning": "Cái ghế",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-10-14T20:53:00Z"
+    }
+  },
+  {
+    "word": "School",
+    "meaning": "Trường học",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-01-02T01:47:00Z"
+    }
+  },
+  {
+    "word": "Teacher",
+    "meaning": "Giáo viên",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-12-07T23:50:00Z"
+    }
+  },
+  {
+    "word": "Student",
+    "meaning": "Học sinh",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-06-27T02:01:00Z"
+    }
+  },
+  {
+    "word": "Phone",
+    "meaning": "Điện thoại",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-05-12T11:09:00Z"
+    }
+  },
+  {
+    "word": "Car",
+    "meaning": "Xe hơi",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-18T02:40:00Z"
+    }
+  },
+  {
+    "word": "Bike",
+    "meaning": "Xe đạp",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-08T20:50:00Z"
+    }
+  },
+  {
+    "word": "Tree",
+    "meaning": "Cái cây",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-04-12T06:39:00Z"
+    }
+  },
+  {
+    "word": "Dog",
+    "meaning": "Con chó",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-12-07T12:58:00Z"
+    }
+  },
+  {
+    "word": "Cat",
+    "meaning": "Con mèo",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-10-20T04:08:00Z"
+    }
+  },
+  {
+    "word": "Food",
+    "meaning": "Thức ăn",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-11-25T07:30:00Z"
+    }
+  },
+  {
+    "word": "Water",
+    "meaning": "Nước",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-07-23T20:17:00Z"
+    }
+  },
+  {
+    "word": "Sun",
+    "meaning": "Mặt trời",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-02-08T02:58:00Z"
+    }
+  },
+  {
+    "word": "Moon",
+    "meaning": "Mặt trăng",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-10-16T23:00:00Z"
+    }
+  },
+  {
+    "word": "Star",
+    "meaning": "Ngôi sao",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-08-01T04:48:00Z"
+    }
+  },
+  {
+    "word": "Friend",
+    "meaning": "Bạn bè",
+    "authorId": {
+      "$oid": "68a0c2f2bbde4ba65de16dfa"
+    },
+    "createdAt": {
+      "$date": "2025-03-29T01:55:00Z"
+    }
+  }
+]

@@ -1,13 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useRouter } from "next/navigation";
 
-export default function Navbar() {
-    const { data: session } = useSession();
-
+export default function Navbar({ session }: { session: any }) {
+    const router = useRouter();
     return (
         <nav className="w-full border-b bg-white shadow-sm">
             <div className="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -36,7 +36,8 @@ export default function Navbar() {
                             </Button>
                         </div>
                     ) : (
-                        <Button onClick={() => signIn("google")}>Đăng nhập</Button>
+                        <Button onClick={() => { router.push("/auth/signin") }}>Đăng nhập</Button>
+
                     )}
                 </div>
             </div>

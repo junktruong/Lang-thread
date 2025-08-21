@@ -3,12 +3,24 @@ import { getServerSession } from "next-auth"
 import { authOptions } from "@/lib/auth"
 import { NextResponse } from "next/server"
 
-export async function GET() {
+export async function GET(req: Request) {
+    const { searchParams } = new URL(req.url);
+    const skip = parseInt(searchParams.get("skip") || "0", 10);
+    const take = parseInt(searchParams.get("take") || "5", 10);
+
     const posts = await db.post.findMany({
-        include: { author: true, comments: true },
-        orderBy: { createdAt: "desc" }
-    })
-    return NextResponse.json(posts)
+        skip,
+        take,
+        orderBy: { createdAt: "desc" },
+        include: {
+            author: {
+                select: { id: true, name: true, email: true, image: true },
+            },
+            comments: true,
+        },
+    });
+
+    return NextResponse.json(posts);
 }
 
 export async function POST(req: Request) {
