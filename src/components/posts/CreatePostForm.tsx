@@ -1,13 +1,14 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Post, usePostStore } from "@/store/postStore";
-import { storage } from "@/lib/firebase";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import ImageUploaderWithCrop from "@/components/ImageUpload/ImageUploadCrop";
+import { uploadBytes, getDownloadURL, ref } from "firebase/storage";
+import { storage } from "@/lib/firebase"; // file config firebase bạn đã tạo
 
 export default function CreatePostForm({ session }: { session: any }) {
     const router = useRouter();
@@ -15,11 +16,7 @@ export default function CreatePostForm({ session }: { session: any }) {
     const [word, setWord] = useState("");
     const [meaning, setMeaning] = useState("");
     const [imageFile, setImageFile] = useState<File | null>(null);
-
-    // Camera states
-    const [isCameraOpen, setIsCameraOpen] = useState(false);
-    const videoRef = useRef<HTMLVideoElement | null>(null);
-    const canvasRef = useRef<HTMLCanvasElement | null>(null);
+    const [previewUrl, setPreviewUrl] = useState<string | null>(null); // 👈 thêm state này
 
     const { addPost } = usePostStore();
 
@@ -31,70 +28,15 @@ export default function CreatePostForm({ session }: { session: any }) {
         }
     };
 
-    // Mở camera
-    async function openCamera() {
-        setIsCameraOpen(true);
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-        if (videoRef.current) {
-            videoRef.current.srcObject = stream;
-        }
-    }
-
-    // Chụp ảnh từ camera
-    function capturePhoto() {
-        if (!videoRef.current || !canvasRef.current) return;
-        const ctx = canvasRef.current.getContext("2d");
-        canvasRef.current.width = videoRef.current.videoWidth;
-        canvasRef.current.height = videoRef.current.videoHeight;
-        ctx?.drawImage(videoRef.current, 0, 0);
-        canvasRef.current.toBlob(
-            (blob) => {
-                if (blob) {
-                    const file = new File([blob], `capture-${Date.now()}.png`, { type: "image/png" });
-                    setImageFile(file);
-                }
-            },
-            "image/png",
-            1
-        );
-        setIsCameraOpen(false);
-        // Tắt camera
-        const stream = videoRef.current?.srcObject as MediaStream;
-        stream?.getTracks().forEach((track) => track.stop());
-    }
-
-    // Chuyển sang WebP
-    async function convertToWebP(file: File): Promise<Blob> {
-        return new Promise((resolve) => {
-            const img = new Image();
-            img.src = URL.createObjectURL(file);
-            img.onload = () => {
-                const canvas = document.createElement("canvas");
-                canvas.width = img.width;
-                canvas.height = img.height;
-                const ctx = canvas.getContext("2d");
-                ctx?.drawImage(img, 0, 0);
-                canvas.toBlob(
-                    (blob) => {
-                        if (blob) resolve(blob);
-                    },
-                    "image/webp",
-                    0.8
-                );
-            };
-        });
-    }
-
     async function handleSubmit() {
         let mediaUrl = null;
         let mediaType = null;
 
         if (imageFile) {
-            const webpBlob = await convertToWebP(imageFile);
-            const storageRef = ref(storage, `posts/${Date.now()}.webp`);
-            await uploadBytes(storageRef, webpBlob);
+            const storageRef = ref(storage, `posts/${Date.now()}-${imageFile.name}`);
+            await uploadBytes(storageRef, imageFile);
             mediaUrl = await getDownloadURL(storageRef);
-            mediaType = "image/webp";
+            mediaType = imageFile.type;
         }
 
         const res = await fetch("/api/posts", {
@@ -115,7 +57,7 @@ export default function CreatePostForm({ session }: { session: any }) {
                 authorId: data.authorId,
                 author: session.user,
             };
-            addPost(newPost);
+            addPost(newPost); // luôn đẩy lên đầu
         }
 
         setShowForm(false);
@@ -141,39 +83,19 @@ export default function CreatePostForm({ session }: { session: any }) {
                         onChange={(e) => setMeaning(e.target.value)}
                     />
 
-                    {/* Upload ảnh từ file */}
-                    <Input
-                        type="file"
-                        accept="image/*"
-                        onChange={(e) => {
-                            if (e.target.files && e.target.files[0]) {
-                                setImageFile(e.target.files[0]);
-                            }
+                    <ImageUploaderWithCrop
+                        onImageCropped={(file, previewUrl) => {
+                            setImageFile(file);
+                            // hiển thị luôn trong form
+                            setPreviewUrl(previewUrl);
                         }}
                     />
 
-                    {/* Chụp ảnh */}
-                    {!isCameraOpen && (
-                        <Button type="button" onClick={openCamera}>
-                            Mở camera
-                        </Button>
-                    )}
-                    {isCameraOpen && (
-                        <div className="space-y-2">
-                            <video ref={videoRef} autoPlay className="w-full rounded" />
-                            <Button type="button" onClick={capturePhoto}>
-                                Chụp ảnh
-                            </Button>
-                            <canvas ref={canvasRef} className="hidden" />
-                        </div>
-                    )}
-
-                    {/* Preview ảnh đã chọn */}
-                    {imageFile && (
+                    {previewUrl && (
                         <img
-                            src={URL.createObjectURL(imageFile)}
-                            alt="Preview"
-                            className="w-32 rounded"
+                            src={previewUrl}
+                            alt="Selected"
+                            className="w-48 h-48 object-cover rounded"
                         />
                     )}
 
