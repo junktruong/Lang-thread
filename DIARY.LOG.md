@@ -49,3 +49,48 @@ về UI chính :
  cải thiện layout (cái này đã từng suy nghĩ trước đây ) phải thể hiện rõ đâu là từ gốc đâu là nghĩa 
 
  
+29/8/2025 : 
+thay đổi lớn 
+
+thay đổi giao diện và business logic 
+
+giao diện sẽ bao gồm  
+
+================== Post card ===========================
+user name 
+title - word
+
+topic tag 
+
+media
+
+mean 
+
+vote up and down  |  comment   | star
+=================================================
+
+rule : nếu như card của tác giả bị sai nghĩa thì có thể vote down 
+
+sau khi chọn đủ 5 từ mới vào star  thì sẽ chuyển sang chế độ học từ mới theo câu tức là giờ các bài đăng sẽ chỉ bao gồm các câu mà chứ 5 từ vựng mà bạn đã star thôi 
+
+nâng cấp gói vip : có thể chọn nhiều hơn 5 từ mỗi ngày 
+
+
+================= Post sentence card  =============================
+
+user name 
+
+parapharase 
+
+media ?
+nghĩa của câu 
+
+vote up and down | comment  | star 
+
+=================================================
+
+tương tự là phải cmt nghĩa rồi mới được xem nghĩa mà bài viêt đăng và có thể vote down hoặc up cho bài viết
+
+note : làm sao để tạo hứng thú để người dùng có hứng thú viết một câu dài chứa những từ ngữ ấy hoặc phải dùng bot để tìm kiếm và đăng lên 
+và làm thế nào để giữ chân người dùng trong ứng dụng
+

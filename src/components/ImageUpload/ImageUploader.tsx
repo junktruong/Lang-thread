@@ -52,6 +52,16 @@ export default function ImageUploader({ onImageCropped }: { onImageCropped: (fil
                     onCancel={() => setRawImage(null)}
                 />
             )}
+
+            {/* Preview ảnh đã chọn */}
+            {rawImage && (
+                <img
+                    src={URL.createObjectURL(rawImage)}
+                    alt="Preview"
+                    className="w-32 rounded"
+                />
+            )}
+
         </div>
     );
 }
