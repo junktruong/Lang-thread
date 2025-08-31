@@ -30,8 +30,9 @@ mongod --port 27017 --dbpath ~/mongodb-data/rs1 --replSet rs0 --bind_ip localhos
 mongod --port 27018 --dbpath ~/mongodb-data/rs2 --replSet rs0 --bind_ip localhost
 mongod --port 27019 --dbpath ~/mongodb-data/rs3 --replSet rs0 --bind_ip localhost
 
+
 mỗi node ta để vào một cổng node chính chúng ta sẽ để ở cổng chính mặc định của mongo 
-lưu ý lúc này bạn phải tắt mongo đi vì mongo đang start sẽ chiếm cổng 27017
+lưu ý lúc này bạn phải tắt mongo đi vì mongo đang start sẽ chiếm cổng 27017 
 
 sudo systemctl stop mongod
 

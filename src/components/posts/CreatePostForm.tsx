@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Post, usePostStore } from "@/store/postStore";
 import { storage } from "@/lib/firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import ImageUploader from "../ImageUpload/ImageUploader";
 
 export default function CreatePostForm({ session }: { session: any }) {
     const router = useRouter();
@@ -21,7 +22,7 @@ export default function CreatePostForm({ session }: { session: any }) {
     const videoRef = useRef<HTMLVideoElement | null>(null);
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-    const { addPost } = usePostStore();
+    const { addPost, nextPage } = usePostStore();
 
     const handleCreatePost = () => {
         if (!session) {
@@ -93,6 +94,7 @@ export default function CreatePostForm({ session }: { session: any }) {
             const webpBlob = await convertToWebP(imageFile);
             const storageRef = ref(storage, `posts/${Date.now()}.webp`);
             await uploadBytes(storageRef, webpBlob);
+
             mediaUrl = await getDownloadURL(storageRef);
             mediaType = "image/webp";
         }
@@ -116,6 +118,7 @@ export default function CreatePostForm({ session }: { session: any }) {
                 author: session.user,
             };
             addPost(newPost);
+            nextPage();
         }
 
         setShowForm(false);
@@ -153,7 +156,7 @@ export default function CreatePostForm({ session }: { session: any }) {
                     />
 
                     {/* Chụp ảnh */}
-                    {!isCameraOpen && (
+                    {/* {!isCameraOpen && (
                         <Button type="button" onClick={openCamera}>
                             Mở camera
                         </Button>
@@ -164,9 +167,12 @@ export default function CreatePostForm({ session }: { session: any }) {
                             <Button type="button" onClick={capturePhoto}>
                                 Chụp ảnh
                             </Button>
+                            <Button type="button" onClick={() => setIsCameraOpen(false)}>
+                                Hủy
+                            </Button>
                             <canvas ref={canvasRef} className="hidden" />
                         </div>
-                    )}
+                    )} */}
 
                     {/* Preview ảnh đã chọn */}
                     {imageFile && (
@@ -176,6 +182,8 @@ export default function CreatePostForm({ session }: { session: any }) {
                             className="w-32 rounded"
                         />
                     )}
+
+                    <ImageUploader onImageCropped={(file) => setImageFile(file)} />
 
                     <Button onClick={handleSubmit}>Submit</Button>
                 </div>

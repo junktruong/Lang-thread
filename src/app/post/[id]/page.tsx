@@ -81,7 +81,7 @@ export default function PostDetailPage() {
                     <CardContent>
                         <h2 className="text-lg font-bold">{post.word}</h2>
                         <p className="text-muted-foreground mb-2">{post.meaning}</p>
-                        {post.mediaType === "image" && (
+                        {post.mediaType === "image/webp" && (
                             <img src={post.mediaUrl || ""} alt={post.word} className="rounded-md w-full" />
                         )}
                         {post.mediaType === "video" && (
