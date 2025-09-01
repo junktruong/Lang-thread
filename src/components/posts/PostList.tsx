@@ -61,7 +61,7 @@ export default function PostList({ initialPosts }: { initialPosts: Post[] }) {
                         <CardTitle>{post.word}</CardTitle>
                         <div className="text-xs text-gray-400 flex gap-2 items-center">
                             {post.author?.image && (
-                                <Image
+                                <img
                                     src={post.author.image}
                                     alt={post.author.name || "user"}
                                     className="w-5 h-5 rounded-full"
@@ -80,7 +80,7 @@ export default function PostList({ initialPosts }: { initialPosts: Post[] }) {
                         {post.mediaUrl && (
                             <div className="mt-2">
                                 {post.mediaType?.startsWith("image") ? (
-                                    <Image
+                                    <img
                                         src={post.mediaUrl}
                                         alt="media"
                                         className="max-h-48 rounded"
