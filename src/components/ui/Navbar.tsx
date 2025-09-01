@@ -5,8 +5,9 @@ import { signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useRouter } from "next/navigation";
+import { SessionAuthor } from "@/lib/interface";
 
-export default function Navbar({ session }: { session: any }) {
+export default function Navbar({ session }: { session: SessionAuthor | null }) {
     const router = useRouter();
     return (
         <nav className="w-full border-b bg-white shadow-sm">

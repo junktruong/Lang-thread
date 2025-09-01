@@ -3,17 +3,31 @@
 import { useEffect, useState } from "react"
 import { useParams } from "next/navigation"
 import { usePostStore, Post } from "@/store/postStore"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Card, CardHeader, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
+interface Comment {
+    id: string
+    content: string
+    mediaUrl: string | null
+    mediaType: "image" | "video" | null
+    createdAt: string
+    author: {
+        id: string
+
+        name: string
+        image: string
+    }
+}
+
 export default function PostDetailPage() {
     const { id } = useParams()
     const { posts, addPost } = usePostStore()
     const [post, setPost] = useState<Post | null>(null)
-    const [comments, setComments] = useState<any[]>([])
+    const [comments, setComments] = useState<Comment[]>([])
     const [commentContent, setCommentContent] = useState("")
 
     // Lấy post từ store nếu có

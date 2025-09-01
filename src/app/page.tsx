@@ -4,9 +4,10 @@ import Navbar from "@/components/ui/Navbar";
 import CreatePostForm from "@/components/posts/CreatePostForm";
 import PostList from "@/components/posts/PostList";
 import { getServerSession } from "next-auth";
+import { SessionAuthor } from "@/lib/interface";
 
 export default async function HomePage() {
-  const session = await getServerSession(authOptions);
+  const session: SessionAuthor | null = await getServerSession(authOptions);
 
   const res = await fetch(`${process.env.BACKEND_URL}/api/posts?skip=0&take=5`, {
     cache: "no-store", // tránh cache khi SSR

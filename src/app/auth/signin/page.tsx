@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { signIn } from "next-auth/react"
 
 export default function SignInPage() {
-    const { data: session, status } = useSession()
+    const { data: sesson, status } = useSession()
     const router = useRouter()
 
     useEffect(() => {

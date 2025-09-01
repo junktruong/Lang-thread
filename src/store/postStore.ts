@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-interface Author {
+export interface Author {
     id: string;
     name: string | null;
     email: string | null;

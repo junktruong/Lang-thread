@@ -1,14 +1,15 @@
 // components/posts/PostList.tsx
 "use client";
 
-import { useEffect, useRef, useCallback, useState } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { usePostStore } from "@/store/postStore";
+import { Post } from "@prisma/client";
 
-export default function PostList({ initialPosts }: { initialPosts: any[] }) {
+export default function PostList({ initialPosts }: { initialPosts: Post[] }) {
     const router = useRouter();
-    const { posts, page, loading, setPosts, resetPosts, setLoading, nextPage } =
+    const { posts, page, loading, setPosts, setLoading, nextPage } =
         usePostStore();
     const loaderRef = useRef<HTMLDivElement | null>(null);
 

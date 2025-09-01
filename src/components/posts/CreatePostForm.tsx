@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,8 +8,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Post, usePostStore } from "@/store/postStore";
 import { storage } from "@/lib/firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { SessionAuthor } from "@/lib/interface";
 
-export default function CreatePostForm({ session }: { session: any }) {
+
+export default function CreatePostForm({ session }: { session: SessionAuthor | null }) {
     const router = useRouter();
     const [showForm, setShowForm] = useState(false);
     const [word, setWord] = useState("");
@@ -113,7 +115,7 @@ export default function CreatePostForm({ session }: { session: any }) {
                 mediaUrl: data.mediaUrl,
                 mediaType: data.mediaType,
                 authorId: data.authorId,
-                author: session.user,
+                author: session?.user,
             };
             addPost(newPost);
         }
